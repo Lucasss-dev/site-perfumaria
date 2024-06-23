@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+/* CORES USADAS 
+
+Dark cyan: hsl(158, 36%, 37%)
+Cream: hsl(30, 38%, 92%)
+Very dark blue: hsl(212, 21%, 14%)
+Dark grayish blue: hsl(228, 12%, 48%)
+White: hsl(0, 0%, 100%)
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --cor01: hsl(158, 36%, 37%);
+    --cor02: hsl(30, 38%, 92%);
+    --cor03: hsl(212, 21%, 14%);
+    --cor04: hsl(228, 12%, 48%);
+    --cor05: hsl(0, 0%, 100%);
+    --fonte01: "Fraunces";
+    --fonte02: "Montserrat";
+}  
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    overflow: hidden;
+}
+
+main {
+    background-color: var(--cor02);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+}
+
+article {
+    width: 260px;
+    height: 400px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 0px 10px 10px 0px;
+    margin-bottom: 3px;
+}
+
+img {
+    border-radius: 10px 0px 0px 10px;
+    width: 260px;
+    height: 400px;
+
+}
+
+#produto {
+    font-family: var(--fonte02);
+    font-size: 0.8em;
+    letter-spacing: 5px;
+    padding-top: 5px;
+}
+
+#nomeperfume {
+    padding: 20px 0px;
+    font-size: 2.2em;
+    line-height: 0.9em;
+    font-family: var(--fonte01);
+    font-weight: 700;
+}
+
+#descricaoproduto {
+    font-family: var(--fonte02);
+    padding-bottom: 15px;
+    font-weight: 400;
+    font-size: 0.8em;
+    line-height: 1.6em;
+    width: 220px;
+}
+
+#preco {
+    font-family: var(--fonte01);
+    font-size: 1.8em;
+    color: var(--cor01);
+    font-weight: 1000;
+    padding-bottom: 20px;
+}
+
+#precoantigo {
+    font-size: 15px;
+    padding: 15px;
+    font-weight: 400;
+    font-family: var(--fonte02);
+    color: black;
+}
+
+#comprarbotao {
+    text-align: center;
+    color: white;
+    font-family: var(--fonte02);
+    font-weight: 600;
+    font-size: 0.8em;
+    background-color: var(--cor01);
+    width: 210px;
+    padding: 13px;
+    border-radius: 8px;
+}
+
+#comprarbotao:hover {
+    background-color: hsl(159, 37%, 21%);
+}
+
+footer {
+    background-color: var(--cor02);
+    text-align: center;
+    font-size: 0.8em;
+    font-family: sans-serif;
+    color: var(--cor01);
+}
+
+footer a{
+    color: var(--cor03);
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+footer a:hover {
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+    transition: background-color 0.7s;
+}
